@@ -1,0 +1,61 @@
+.header {
+    background-color: $primary;
+    padding: 4px 0;
+    &_logo {
+        background-image: url(../images/week3-4/logo-white.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+        height: 49px;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        @include RWD($md) {
+            position: relative;
+        }
+    }
+    .rwdBtn {
+        display: none;
+        color: $txtLight;
+        cursor: pointer;
+        @include font-size(30px);
+        @include RWD($md) {
+            display: block;
+        }
+    }
+    .navBar {
+        color: $txtLight;
+        @include RWD($md) {
+            position: absolute;
+            right: 0;
+            top: 108%;
+            display: none;
+        }
+        &_list {
+            @include notoSans(20px, 400);
+            @include RWD($md) {
+                background-color: $darkRed;
+                flex-direction: column;
+                align-items: center;
+                @include notoSans(16px, 400);
+            }
+            a {
+                &:hover {
+                    color: $light;
+                }
+                @include RWD($md) {
+                    display: inline-block;
+                    padding: 12px 64px;
+                }
+            }
+        }
+    }
+    // 漢堡開關
+    .open {
+        display: block;
+    }
+}

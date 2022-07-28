@@ -1,0 +1,25 @@
+// font-size & line-height
+@mixin font-size ($font-size) {
+    font-size: $font-size ;    
+    line-height: $font-size * 1.5 ;
+};  
+
+
+// font-family & font-weight
+@mixin roboto($font-size,$font-weight) {
+    font-family: $font-roboto;
+    font-weight: $font-weight;
+    @include font-size($font-size)
+};
+@mixin notoSans($font-size,$font-weight) {
+    font-family: $font-notoSans;
+    font-weight: $font-weight;
+    @include font-size($font-size)
+};
+// 斷點設定
+@mixin RWD ($breakPoint) {
+    @media(max-width:$breakPoint){
+        @content
+    }
+};
+
