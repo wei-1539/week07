@@ -7,3 +7,4 @@ rwdBtn.addEventListener("click",(e)=>{
         navBar.classList.toggle("open")
     }
 })
+

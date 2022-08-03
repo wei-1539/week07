@@ -5,6 +5,9 @@
 @import "./mixin/mixin";
 @import "./mixin/spacing";
 
+//component 
+@import "./component/pagination";
+
 // layout
 @import "./layout/header";
 @import "./layout/footer";
@@ -13,3 +16,4 @@
 @import "./page/home";
 @import "./page/faq";
 @import "./page/product";
+@import "./page/productSecond";

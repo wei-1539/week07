@@ -77,10 +77,14 @@
 
 // rwd
 @include RWD($lg){
+    .pt-4-lg{padding-top: 16px;}
     .pt-20-lg{padding-top: 80px;}
+    .pb-2-lg{padding-bottom: 8px;}
+    .pb-4-lg{padding-bottom: 16px;}
     .mr-0-lg{margin-right: 0;}
     .mr-4-lg{margin-right: 16px;}
     .mb-6-lg{margin-bottom: 24px;}
+    .mb-10-lg{margin-bottom: 40px;}
 }
 @include RWD($md){
     .mr-0-md{margin-right: 0;}
@@ -88,6 +92,8 @@
     .mb-2-md{margin-bottom: 8px;}
     .mb-4-md{margin-bottom: 16px;}
     .mb-6-md{margin-bottom: 24px;}
+    .mb-10-md{margin-bottom: 40px;}
+    .mb-16-md{margin-bottom: 64px;}
     
     .pt-10-md{padding-top: 40px;}
     .pb-10-md{padding-bottom: 40px;}

@@ -1,0 +1,11 @@
+.product{
+    &_second{
+        width: 31.3333%;
+        @include RWD($lg){
+            width: 48%;
+        }
+        @include RWD($md){
+            width: 100%;
+        }
+    }
+}
