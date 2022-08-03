@@ -5,29 +5,11 @@
 @import "./mixin/mixin";
 @import "./mixin/spacing";
 
-// container
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 12px;
-
-  @include RWD($lg) {
-    max-width: 720px; //696+12+12
-  }
-
-  // @include RWD($md){
-  //   max-width: 373px; // 349+12+12
-  // }
-}
-
-.df {
-  display: flex;
-}
-
-
 // layout
 @import "./layout/header";
 @import "./layout/footer";
 
 // page
 @import "./page/home";
+@import "./page/faq";
+@import "./page/product";

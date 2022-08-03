@@ -9,6 +9,7 @@
 .pt-9{padding-top: 36px;}
 .pt-10{padding-top: 40px;}
 .pt-20{padding-top: 80px;}
+.pt-24{padding-top: 96px;}
 
 .pb-1{padding-bottom: 4px;}
 .pb-2{padding-bottom: 8px;}
@@ -76,6 +77,7 @@
 
 // rwd
 @include RWD($lg){
+    .pt-20-lg{padding-top: 80px;}
     .mr-0-lg{margin-right: 0;}
     .mr-4-lg{margin-right: 16px;}
     .mb-6-lg{margin-bottom: 24px;}
@@ -89,4 +91,7 @@
     
     .pt-10-md{padding-top: 40px;}
     .pb-10-md{padding-bottom: 40px;}
+    .pb-16-md{padding-bottom: 64px;}
 }
+// 特殊
+.p-4{padding: 16px;}

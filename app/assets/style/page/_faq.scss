@@ -1,0 +1,27 @@
+.faq-point{
+    @include notoSans(48px,700);
+    @include RWD($md){
+        @include font-size(24px)
+    }
+    &::before{
+        content:"";
+        width: 8px;
+        height: 72px;
+        background-color: $primary;
+        margin-right: 16px;
+        @include RWD($md){
+            height: 36px;
+        }
+    }
+};
+.faq-pointSecond{
+    @include notoSans(24px,700);
+}
+.faqContent_item{
+    &_point{
+        @include notoSans(20px,700);
+    }
+    &_title{
+        @include notoSans(16px,400);
+    }
+}
