@@ -1,0 +1,47 @@
+.store{
+    &_list{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        @include RWD($lg){
+            flex-wrap: wrap;
+        }
+    }
+    &_item{
+        flex-direction: column;
+        &:first-child{
+            width: 33%;
+        }
+        &:last-child{
+            width: 65%;
+        }
+        @include RWD($lg){
+            flex-direction: row;
+            &:first-child{
+                width: 100%;
+            }
+            &:last-child{
+                width: 100%;
+            }
+        }
+        @include RWD($md){
+            flex-direction: column;
+        }
+    }
+    // lg 呈現
+    &_img,&_control{
+        @include RWD($lg){
+            width: 50%;
+        }
+        @include RWD($md){
+            width: 100%;
+        }
+    }
+    &_map{
+        @include RWD($lg){
+            height: 414px;
+        }
+        @include RWD($md){
+            height: 208px;
+        }
+    }
+}
