@@ -87,6 +87,7 @@
     .mr-4-lg{margin-right: 16px;}
     .mr-6-lg{margin-right: 24px;}
     .mb-1-lg{margin-bottom: 4px;}
+    .mt-2-lg{margin-top: 2px;}
     .mb-6-lg{margin-bottom: 24px;}
     .mb-10-lg{margin-bottom: 40px;}
     .mb-20-lg{margin-bottom: 80px;}
@@ -94,6 +95,8 @@
 @include RWD($md){
     .mr-0-md{margin-right: 0;}
     .mr-2-md{margin-right: 8px;}
+    .mr-4-md{margin-right: 16px;}
+    .mt-4-md{margin-top: 16px;}
     .mb-2-md{margin-bottom: 8px;}
     .mb-4-md{margin-bottom: 16px;}
     .mb-6-md{margin-bottom: 24px;}
