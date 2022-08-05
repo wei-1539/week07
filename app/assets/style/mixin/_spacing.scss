@@ -48,8 +48,10 @@
 .mb-10{margin-bottom: 40px;}
 .mb-12{margin-bottom: 48px;}
 .mb-14{margin-bottom: 56px;}
+.mb-15{margin-bottom: 60px;}
 .mb-18{margin-bottom: 72px;}
 .mb-20{margin-bottom: 80px;}
+.mb-32{margin-bottom: 124px;}
 
 .ml-1{margin-left: 4px;}
 .ml-2{margin-left: 8px;}
@@ -84,8 +86,10 @@
     .mr-0-lg{margin-right: 0;}
     .mr-4-lg{margin-right: 16px;}
     .mr-6-lg{margin-right: 24px;}
+    .mb-1-lg{margin-bottom: 4px;}
     .mb-6-lg{margin-bottom: 24px;}
     .mb-10-lg{margin-bottom: 40px;}
+    .mb-20-lg{margin-bottom: 80px;}
 }
 @include RWD($md){
     .mr-0-md{margin-right: 0;}

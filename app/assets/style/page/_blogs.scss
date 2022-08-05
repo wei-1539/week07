@@ -1,0 +1,103 @@
+.blogs{
+    &_navber{
+        background-color: $darkRed;
+        @include RWD($md){
+            display: none;
+        }
+        .container{
+            justify-content: space-between;
+            align-items: center;
+            color:$txtLight;
+        }
+        &_list{
+            padding: 13px 0;
+        }
+        &_item{
+            @include notoSans(20px,700);
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        &_icon{
+            @include font-size(30px);
+        }
+    }
+    // 內文
+    &_point{
+        @include notoSans(48px,700);
+        &::before{
+            content: "";
+            width: 8px;
+            height: 72px;
+            background-color: $primary;
+            margin-right: 16px;
+            @include RWD($md){
+                height: 36px;
+            }
+        }
+        @include RWD($md){
+            @include font-size(24px)
+        }
+    }
+    &_item{
+        justify-content: space-between;
+        @include RWD($md){
+            flex-direction: column;
+        }
+    }
+    &_img{
+        width: 50%;
+        display: inherit;
+        @include RWD($md){
+            width: 100%;
+        }
+    }
+    &_right{
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: flex-end;
+        @include RWD($md){
+            width: 100%;
+            // align-items: flex-start;
+        }
+    }
+    &_second{
+        color:$darkRed;
+        @include notoSans(32px,400);
+        @include RWD($lg){
+            @include font-size(24px)
+        }
+    }
+    &_title{
+        justify-content: space-between;
+        &_name{
+            @include roboto(20px,500);
+            @include RWD($lg){
+                @include font-size(16px)
+            }
+        }
+        &_date{
+            @include roboto(16px,500);
+        }
+    }
+    &_detail{
+        color:$lightGray;
+        text-align: justify;
+        @include notoSans(20px,400);
+        @include RWD($lg){
+            @include font-size(16px)
+        }
+        @include RWD($md){
+            display: none;
+        }
+    }
+    &_btn{
+        color:$darkRed;
+        @include roboto(36px,900);
+        text-align: end;
+        @include RWD($lg){
+            display: none;
+        }
+    }
+}
