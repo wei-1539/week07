@@ -95,8 +95,12 @@
     }
     &_item{
         text-align: center;
+        width: 33.333%;
+        @include RWD($lg){
+            width: 100%;
+        }
+        
         &_img{
-            max-width: 416px;
             @include RWD($lg){
                 max-width: 336px;
             }
