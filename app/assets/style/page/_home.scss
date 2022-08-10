@@ -35,6 +35,9 @@
         background-color: $primary;
         @include notoSans(20px,500);
         padding: 6px 12px;
+        &:hover{
+            opacity: 0.7;
+        }
     }
 }
 .specialty{
@@ -88,7 +91,11 @@
             @include font-size(24px);
         }
     }
+    .container{
+        padding: 0 12px;
+    }
     &_list{
+        margin: 0 -12px;
         @include RWD($lg){
             flex-direction: column;
         }
@@ -96,18 +103,19 @@
     &_item{
         text-align: center;
         width: 33.333%;
+        padding: 0 12px;
         @include RWD($lg){
             width: 100%;
         }
         
-        &_img{
-            @include RWD($lg){
-                max-width: 336px;
-            }
-            @include RWD($md){
-                max-width: 348px;
-            }
-        }
+        // &_img{
+        //     @include RWD($lg){
+        //         max-width: 336px;
+        //     }
+        //     @include RWD($md){
+        //         max-width: 348px;
+        //     }
+        // }
         &_link{
             color: $primary;
             @include roboto(48px,900);
@@ -173,6 +181,7 @@
         }
     }
     &_item{
+        flex-direction: column;
         box-shadow: 0px 2px 6px #00000029;
         border-radius: 0px 0px 3px 3px;
         @include RWD($lg){
@@ -182,18 +191,29 @@
             width: 100%;
         }
         &_content{
+            flex-grow:1;
+            flex-direction: column;
             @include notoSans(16px,400);
             .date{
                 @include notoSans(14px,400);
                 color: $gray;
             }
         }
+        &_title{
+            flex-grow:1;
+        }
     }
 }
 .contact{
     background-color: $light ;
     .container{
-        max-width: 636px;
+        width: 50%;
+        @include RWD($lg){
+            width: 90%;
+        }
+        @include RWD($md){
+            width: 100%;
+        }
     }
     &_point{
         text-align: center;
@@ -218,6 +238,9 @@
         &_input,&_textarea{
             @include notoSans(16px,400);
             padding: 6px 0 12px 6px;
+        }
+        &_textarea{
+            resize:none
         }
         &_checkBox{
             align-items: start;

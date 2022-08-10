@@ -1,6 +1,10 @@
 .header {
     background-color: $primary;
     padding: 4px 0;
+    @include RWD($md){
+        padding: 16px 0;
+        position: relative;
+    }
     &_logo {
         background-image: url(../images/week3-4/logo-white.png);
         background-repeat: no-repeat;
@@ -18,9 +22,7 @@
     .container {
         justify-content: space-between;
         align-items: center;
-        @include RWD($md) {
-            position: relative;
-        }
+        
     }
     .rwdBtn {
         display: none;
@@ -37,7 +39,7 @@
         @include RWD($md) {
             position: absolute;
             right: 0;
-            top: 108%;
+            top: 100%;
             display: none;
         }
         &_list {
