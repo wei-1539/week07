@@ -1,0 +1,32 @@
+商品頁:
+
+.product-colors-item 可以使用 a 或 button 標籤製作，讓使用者可以點選
+
+商品的 li a 可以不用包到兩個色塊
+
+部落格:
+
+1. fg ig 可以使用 a 標籤並加上 hover 效果
+
+
+
+2.這裡平板是滿版
+
+
+
+
+
+下方提供關於作業細節的建議：
+
+scss:
+
+手機的 container 寬度是 100% 左右 padding 一樣是12px
+
+通用類別的設定可以另外使用 _utilities.scss 統一管理，像 .df
+
+
+這邊回答你的問題:
+
+可以使用這個
+
+material 需要載入他的 CDN 哦~~

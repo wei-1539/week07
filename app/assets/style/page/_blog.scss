@@ -77,8 +77,13 @@
             @include RWD($lg){
                 @include font-size(16px);
             }
+            span{
+                @include font-size(32px);
+                @include RWD($lg){
+                    @include font-size(16px);
+                }
+            }
         }
-
         @include RWD($lg){
             @include font-size(16px)
         }
@@ -105,10 +110,23 @@
             i{
                 @include font-size(24px)
             }
+            @include RWD($lg){
+                margin-left: -12px;
+                margin-right: -12px;
+            }
+        }
+        &_topItem{
+            &:hover{
+                opacity: 0.5;
+            }
         }
         &_downList{
             justify-content: space-between;
             @include notoSans(16px,400);
+            @include RWD($lg){
+                margin-left: -12px;
+                margin-right: -12px;
+            }
         }
     }
 }
