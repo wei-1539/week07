@@ -110,10 +110,7 @@
             i{
                 @include font-size(24px)
             }
-            @include RWD($lg){
-                margin-left: -12px;
-                margin-right: -12px;
-            }
+            
         }
         &_topItem{
             &:hover{
@@ -123,9 +120,10 @@
         &_downList{
             justify-content: space-between;
             @include notoSans(16px,400);
-            @include RWD($lg){
-                margin-left: -12px;
-                margin-right: -12px;
+        }
+        &_downItem{
+            &:hover{
+                opacity: 0.5;
             }
         }
     }
