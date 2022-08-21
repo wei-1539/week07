@@ -108,14 +108,14 @@
             width: 100%;
         }
         
-        // &_img{
-        //     @include RWD($lg){
-        //         max-width: 336px;
-        //     }
-        //     @include RWD($md){
-        //         max-width: 348px;
-        //     }
-        // }
+        &_img{
+            @include RWD($lg){
+                max-width: 336px;
+            }
+            @include RWD($md){
+                max-width: 100%;
+            }
+        }
         &_link{
             color: $primary;
             @include roboto(48px,900);
