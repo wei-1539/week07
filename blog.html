@@ -1,9 +1,41 @@
----
-title: 部落格
-layout: ./app/layout.ejs
-engine: ejs
----
-<div class="blogs_navber article_navber">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    部落格
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Roboto:ital,wght@0,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://kit.fontawesome.com/fc0067d5fd.js" crossorigin="anonymous"></script>
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container df">
+      <a href="index.html"><h1 class="header_logo">logo</h1></a>
+      <!-- 漢堡選單 -->
+      <div class="rwdBtn"><i class="fa-solid fa-bars"></i></div>
+      <nav class="navBar">
+        <ul class="navBar_list df  ">
+          <li class="navBar_item mr-16 mr-0-md"><a href="product.html">系列鏡框</a></li>
+          <li class="navBar_item mr-16 mr-0-md"><a href="stores.html">門市據點</a></li>
+          <li class="navBar_item mr-16 mr-0-md"><a href="blogs.html">部落格</a></li>
+          <li class="navBar_item"><a href="faq.html">常見問題</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="blogs_navber article_navber">
     <div class="container df">
         <ul class="blogs_navber_list df">
             <li class="blogs_navber_item mr-12 mr-4-md"><a href="#">最新消息 </a></li>
@@ -100,3 +132,69 @@ engine: ejs
         </div>
     </div>
 </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="top df mb-8 mb-4-md">
+          <ul class="df navBarFooter mb-6">
+              <li class="navBarFooter_item mr-12"><a href="index.html">首頁</a></li>
+              <li class="navBarFooter_item mr-12"><a href="product.html">系列鏡框</a></li>
+              <li class="navBarFooter_item mr-12"><a href="stores.html">門市據點</a></li>
+              <li class="navBarFooter_item mr-12"><a href="blogs.html">部落格</a></li>
+              <li class="navBarFooter_item"><a href="faq.html">常見問題</a></li>
+          </ul>
+          <ul class="df socialIC mb-6">
+              <li class="socialIC_item mr-8 mr-4-lg mr-2-md"><a href="#"><img src="./assets/images/week3-4/ic-social-fb.png" alt=""></a>
+              </li>
+              <li class="socialIC_item mr-8 mr-4-lg mr-2-md"><a href="#"><img src="./assets/images/week3-4/ic_social_ig.png" alt=""></a>
+              </li>
+              <li class="socialIC_item "><a href="#"><img src="./assets/images/week3-4/ic_social_line.png" alt=""></a></li>
+          </ul>
+          <ul class="content">
+              <li class="content_item mb-2"><a href="tel:090000000"><i class="fa-solid fa-phone mr-5 mr-2-md"></i>0800-000-000</a></li>
+              <li class="content_item mb-8 mb-6-md"><a href="mailto:test@gmail.com"><i class="fa-solid fa-envelope mr-5 mr-2-md"></i>glasses@business.com</a></li>
+          </ul>
+      </div>
+      <ul class="df trademark">
+          <li class="trademark_item mb-2-md">Copyright © 2020 Glasses.All rights reserved.</li>
+          <li class="trademark_item df">
+              <a href="#" class="title mr-12 mb-2-md">隱私權政策</a>
+              <a href="#" class="title">服務條款</a>
+          </li>      
+      </ul>
+  </div>
+  </footer>
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- aos start -->
+  <script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 140, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+  <!-- aos end -->
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>
